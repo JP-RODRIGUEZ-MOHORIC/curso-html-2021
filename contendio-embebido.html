@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contenido embebido</title>
+    <style>
+        .UEL{
+            max-width: 200px;
+        }
+        video{
+            max-width: 500px;
+        }
+        .Portada{
+            max-width: 600px;
+            display: block;
+            margin: auto;   
+        }
+        .piedf{
+             text-align: center; 
+        }
+    </style>
+</head>
+<body>
+    <!--DPR (Device Pixel Ratio) Es la relacion que existe entre los pixeles reales que tiene el dispositivo y los que tenemos disponibles para pintar contenido
+    DPR: Pixeles Reales / Pixeles disponibles
+    -->
+    <h1>Contenido embebido</h1>
+    <img src="/assets/images/Escudo-de-River-gif.webp" alt="Escudo de River">
+    <img src="/assets/images/liga-europea-de-la-uefa.svg" alt="Uefa Europa League" class="UEL">
+    <!--
+    <img srcset="/assets/images/El-Burrito.webp,
+    /assets/images/El-Burrito.jpg,
+    /assets/images/Escudo-River.webp 3x,
+    /assets/images/Escudo-River.jpg 3x" src="/assets/images/El-Burrito.jpg" alt="River">
+    -->
+    <picture>
+        <source srcset="/assets/images/El-Burrito.webp, /assets/images/Escudo-River.jpg" media="(max-width:1200px)">
+        <img src="/assets/images/El-Burrito.jpg" alt="River" >
+    </picture>
+    <audio src="/assets/audio/La 12.mp3" controls autoplay muted></audio>
+    <video src="/assets/video/Golazo_Riquelme_a_Brasil_2005.mp4" controls loop poster="/assets/images/Escudo-River.jpg"></video>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/R48sKV8PstU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<h2>River Tricampeon 1997</h2>
+<p>Tan sólo cuatro días después de haber ganado la Supercopa, los de Núñez lograron el torneo Apertura, su título 27 en la era profesional, al empatar en un gol con Argentinos, y continuaron la ininterrumpida seguidilla de vueltas olímpicas que comenzó con la obtención del Apertura de 1996, cuando también ganó la Copa Libertadores, y siguió con el Clausura de este año.</p>
+<figure>
+    <img class="Portada" src="https://pbs.twimg.com/media/EMVHhfOWoAMRyOz?format=jpg&name=4096x4096" alt="La Portada de Ole">
+    <figcaption class="piedf">La tapa de Ole.</figcaption>
+</figure>
+<p>Los otros tricampeonatos obtenidos por River Plate fueron en 1955/56 y 57 (Carrizo, Pérez, Rossi, Walter Gómez, Prado, Labruna, Loustau y Sívori, entre otros); 1979, Metropolitano y Nacional, y 1980, Metro, dirigido por Labruna, y con Fillol, Passarella, Juan José López, Merlo, Alonso, Luque y el mismísimo Ramón Díaz como sus principales columnas.
+</p>
+</body>
+</html>

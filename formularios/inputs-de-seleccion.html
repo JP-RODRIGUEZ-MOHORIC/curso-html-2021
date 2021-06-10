@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inputs de seleccion</title>
+</head>
+<style>
+.form-1{
+    
+           left: 50vw;
+           transform: translate(-50%, -50%);
+           position: absolute;
+           top: 50vh;    
+
+}
+</style>
+<body>
+    <!--
+        radio: permite seleccionar una unica opcion dentro de una lista de opciones relacionadas.
+
+        checkbox: permite seleccionar varias opciones de una lista de opciones relacionadas.
+
+        select: crea una lista de opciones donde podemos seleccionar una o varias opciones.
+
+        Cada opcion ira dentro de una etiqueta option. Si tenemos muchas opciones podemos agruparlas a traves de la etiqueta optgroup con el atributo label para nombrar la categoria.
+        
+        Con el atributo checked la opcion sale marcada por defecto.
+    -->
+    <h1>Cuestionario</h1>
+<form>
+    <h2>género</h2>
+    <label>masculino
+      <input type="radio" name="gender" value="masculino">
+    </label> 
+    <label>femenino
+      <input type="radio" name="gender" value="femenino">
+    </label> 
+    <label>desconocido
+       <input type="radio" name="gender" value="desconocido">
+    </label> 
+</form>
+<form>
+    <h2>Lenguajes que sabes</h2>
+    <label>HTML
+      <input type="checkbox" name="Language" value="HTML">
+    </label> 
+    <label>CSS
+      <input type="checkbox" name="Language" value="CSS">
+    </label> 
+    <label>JavaScript
+       <input type="checkbox" name="Language" value="JavaScript">
+    </label> 
+</form>
+<form>
+    <h2>Hincha de...</h2>
+    <select name="Club" >
+        <option value="River">River</option>
+        <option value="Boca">Boca</option>
+        <option value="Independiente">Independiente</option>
+        <option value="Racing">Racing</option>
+        <option value="San Lorenzo">San Lorenzo</option>
+    </select>
+</form>
+<form>
+    <h2>Mascotas</h2>
+ <select name="mascotas">
+     <optgroup label="4 patas"></optgroup>
+    <option value="perro">perro</option>
+    <option value="gato">gato</option>
+    <option value="hamster">hamster</option>
+    <option value="conejo">conejo</option>
+</optgroup>
+<optgroup label="aves"></optgroup>
+    <option value="loro">loro</option>
+    <option value="canario">canario</option>
+</optgroup>
+<optgroup label="otros"></optgroup>
+    <option value="serpiente">serpiente</option>
+    <option value="tarantula">tarantula</option>
+</optgroup>
+ </select>
+</form>
+<form class="form-1">
+    <h2>auto</h2>
+    <input type="list" list="auto">
+    <datalist id="auto">
+        <option value="eclipse">Eclipse</option>
+        <option value="lancer">Lancer</option>
+        <option value="civic">Civic</option>
+        <option value="nsx">Nsx</option>
+        <option value="supra">Supra</option>
+        <option value="corolla">Corolla</option>
+    </datalist>
+</form>
+</body>
+</html>

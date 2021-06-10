@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+    <style>
+        body{
+            background-image: url(http://k31.kn3.net/taringa/D/A/7/0/D/A/AndreDodbuack/A71.jpg);
+            background-color: black;
+            background-repeat: no-repeat;
+            background-position: center center;
+            font-style: italic;
+            color: white;
+        }
+.River{
+    /*-webkit-text-stroke: 0.3px black;*/
+   color: white;
+}
+.Plate{
+    
+   color: red;
+}
+.Boca{
+   color: blue;
+}
+.Juniors{
+   color: rgb(219, 219, 46);
+}
+.Rojo{
+   color: red;
+}
+.San{
+   color: blue;
+}
+.Lorenzo{
+   color: red;
+}
+.Racing{
+    /*-webkit-text-stroke: 0.3px black;*/
+   color: white;
+}
+.Club{
+   color: skyblue;
+}
+    </style>
+</head>
+<body>
+    <h1>Listas</h1>
+    <!-- ul (unordered list): Se utiliza cuando el orden de los elementos no influye -->
+    <h2>Lista de Compras</h2>
+    <ul>
+        <li>pan</li>
+        <li>huevos</li>
+        <li>leche</li>
+    </ul>
+    <!-- ol (ordered list): Se utiliza cuando el orden de los elementos es importante -->
+    <h2>Top 5 grandes de Argentina</h2>
+    <ol>
+        <li>River Plate</li>
+        <li>Boca Juniors</li>
+        <li>Independiente</li>
+        <li>Racing Club</li>
+        <li>San Lorenzo</li>
+    </ol>
+    <!-- dl (definition list): Se utiliza para hacer listas de definiciones 
+    Cada elemento de la lista lleva dos etiquetas:
+    dt (definition term): El termino que vamos a definir
+    dd (definition description): La descripcion del termino -->
+    <dl>
+        <dt>HTML</dt>
+        <dd>HyperText Markup Language: Es un lenguaje de marcado que se usa para estructurar datos en una pagina web.</dd>
+        <dt>CSS</dt>
+        <dd>Cascade Style Sheet: Es un lenguaje de diseño que se utiliza para dar estilos al    HTML.</dd>
+        <dt>JavaScript</dt>
+        <dd>Es un lenguaje de programacion para dar interactividad a un sitio web.</dd>
+    </dl>
+    <h1>Atributos de las listas</h1>
+    <!--
+         ol:
+                Type: Estilo de numeracion (1, A, a , I, i)
+                Start: Inicio de la secuencia (Un numero) 
+         ul:     
+                Type: Estilo de los items (disc, square, circle) 
+    -->
+
+    <h2>Clubes con mas titulos de Argentina</h2>
+    <ol type="I">
+        <li> <span class="River">River</span> <span class="Plate">Plate</span></li>
+        <ul type="disc">
+            <li>35 campeonatos Locales</li>
+            <li>12 copas nacionales</li>
+            <li>12 titulos internacionales conmebol</li>
+            <li>5 copas rioplatenses</li>
+        </ul>
+        <li> <span class="Boca">Boca</span> <span class="Juniors">Juniors</span> </li>
+        <ul type="disc">
+            <li>28 campeonatos Locales</li>
+            <li>8 copas nacionales</li>
+            <li>18 titulos internacionales conmebol</li>
+            <li>2 copas rioplatenses</li>
+        </ul>
+        <li><span class="Rojo">Independiente</span></li>
+        <ul type="disc">
+            <li>14 campeonatos Locales</li>
+            <li>3 copas nacionales</li>
+            <li>18 titulos internacionales conmebol</li>
+            <li>2 copas rioplatenses</li>
+        </ul>
+        <li> <span class="San">San</span> <span class="Lorenzo">Lorenzo</span></li>
+        <ul type="disc">
+            <li>12 campeonatos Locales</li>
+            <li>2 copas nacionales</li>
+            <li>3 titulos internacionales conmebol</li>
+        </ul>
+        <li><span class="Racing">Racing</span> <span class="Club">Club</span></li>
+        <ul type="disc">
+            <li>9 campeonatos Locales</li>
+            <li>4 copas nacionales</li>
+            <li>3 titulos internacionales conmebol</li>
+        </ul>
+    </ol>
+
+</body>
+</html>

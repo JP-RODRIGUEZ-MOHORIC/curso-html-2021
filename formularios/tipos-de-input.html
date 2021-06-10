@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de input</title>
+</head>
+<body>
+    <!--
+        tipos de input:
+
+        button: se comporta igual que un botton  <button>.
+        color: se usa para especificar un color.
+        date: se usa para introducir una fecha.
+        datetime: obsoleto.
+        datetime-local: fecha y hora. (No funciona en firefox).
+        email: se usa para introducir email.
+        hidden: Campo oculto. Puede contener valor pero no se mostrara.
+        month: se usa para introducir un mes.
+        number: se usa para introducir valores numericos.
+        password: se usa para introducir contraseñas.
+        range: se usa para establecer un rango.
+        reset: se usa para resetear un formulario.
+        search: se usa para las barras de busqueda.
+        submit: se utiliza para enviar un formulario.
+        tel: se usa para introducir numeros telefonicos.
+        text: valor por defecto.
+        time: se usa para introducir la hora.
+        url: se usa para introducir URLs.
+        week: se usa para introducir el numero de semana del año.
+    -->
+
+<form>
+    <input type="submit" value="enviar input">
+    <button>enviar</button>
+</form>
+<form>
+    <input type="date">
+    <input type="datetime-local">
+    <input type="date">
+    <input type="time">
+    <input type="month">
+    <input type="week">
+    <button>enviar</button>
+</form>
+<form>
+    <div>
+    <label> Search
+        <input type="search">
+    </label>
+    </div>
+    <div>
+    <label> telefono
+        <input type="tel">
+    </label>
+    </div>
+    <div>
+    <label> email
+        <input type="email">
+    </label>
+    </div>
+    <div>
+    <label> password
+        <input type="password">
+    </label>
+    </div>
+    <div>
+    <label> URL
+        <input type="url">
+    </label>
+    </div>
+</form>
+<form>
+    <input type="color">
+    <input type="number">
+    <input type="range" step="10" min="0"max="100">
+    <input type="text">
+    <input type="submit" value="Enviar">
+    <input type="reset">
+</form>
+    
+</body>
+</html>
